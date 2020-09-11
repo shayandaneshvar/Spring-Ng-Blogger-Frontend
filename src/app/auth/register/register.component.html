@@ -1,1 +1,29 @@
-<p>register works!</p>
+<div class="container justify-content-center">
+  <form action="#" class="form-signin" [formGroup]="registerForm"
+        (ngSubmit)="onSubmit()">
+    <h1 class="h3 mb-3 font-weight-normal">Please Register</h1>
+    <div class="form-group">
+      <label for="inputUsername" class="sr-only">Username</label>
+      <input type="text" class="form-control" id="inputUsername"
+             placeholder="Username" required [formControlName]="'username'">
+    </div>
+    <div class="form-group">
+      <label for="inputEmail" class="sr-only">Password</label>
+      <input type="text" class="form-control" id="inputEmail"
+             placeholder="Email" [formControlName]="'email'">
+    </div>
+    <div class="form-group">
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="text" class="form-control" id="inputPassword"
+             placeholder="Password" [formControlName]="'password'">
+    </div>
+    <div class="form-group">
+      <label for="inputConfirmPassword" class="sr-only">Confirm Password</label>
+      <input type="text" class="form-control" id="inputConfirmPassword"
+             placeholder="Confirm Password" [formControlName]="'confirmPassword'">
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign
+      Up
+    </button>
+  </form>
+</div>
