@@ -1,0 +1,26 @@
+.header {
+  padding: 5px 20px;
+  background: royalblue;
+}
+
+.title {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.login, .register {
+  padding-top: 10px;
+  color: aliceblue;
+  text-decoration: none;
+  float: right;
+  background-color: royalblue;
+  border-color: royalblue;
+}
+
+.login:hover, .register:hover, .login:active, .register:active {
+  color: aliceblue;
+  background-color: royalblue;
+  border-color: royalblue;
+  transform: rotate(10deg);
+  transition: ease-in-out 300ms;
+}
