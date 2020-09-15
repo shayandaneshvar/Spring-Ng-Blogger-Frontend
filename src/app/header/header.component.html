@@ -2,11 +2,16 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <h1><a href="#" class="title">Spring-Ng Blog</a></h1>
+        <h1><a href="/" class="title">Spring-Ng Blog</a></h1>
+<!--        <div class="col-md-3">-->
+<!--        </div>-->
       </div>
-      <div class="col-md-6">
-        <a href="/login" class="btn btn-primary login">Login</a>
-        <a href="/register" class="btn btn-primary register">Register</a>
+      <div class="col-md-3">
+          <a href="/add-post" class="new-post btn btn-default"
+             *ngIf="isAuthenticated()"> Add
+            Post</a>
+        <a href="/login" class="btn btn-default login">Login</a>
+        <a href="/register" class="btn btn-default register">Register</a>
       </div>
     </div>
   </div>

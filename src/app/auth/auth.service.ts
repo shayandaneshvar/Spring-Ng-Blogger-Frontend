@@ -17,6 +17,7 @@ export class AuthService {
   }
 
   register(registerPayload: RegisterPayload): Observable<any> {
+    console.log(registerPayload);
     return this.httpClient.post(this.url + 'sign-up', registerPayload);
   }
 
@@ -28,5 +29,9 @@ export class AuthService {
         this.localStorageService.store('username', data.username);
         return true;
       }));
+  }
+
+  isAuthenticated(): boolean {
+    return this.localStorageService.retrieve('username') != null;
   }
 }

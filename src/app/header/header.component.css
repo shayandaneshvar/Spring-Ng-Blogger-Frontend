@@ -8,19 +8,20 @@
   color: aliceblue;
 }
 
-.login, .register {
+.login, .register, .new-post {
   padding-top: 10px;
   color: aliceblue;
   text-decoration: none;
   float: right;
-  background-color: royalblue;
-  border-color: royalblue;
+  background-color: transparent;
+  border-color: transparent;
 }
 
-.login:hover, .register:hover, .login:active, .register:active {
+.login:hover, .register:hover, .login:active, .register:active, .new-post:hover,
+.new-post:active {
   color: aliceblue;
-  background-color: royalblue;
-  border-color: royalblue;
+  background-color: transparent;
+  border-color: transparent;
   transform: rotate(10deg);
   transition: ease-in-out 300ms;
 }
