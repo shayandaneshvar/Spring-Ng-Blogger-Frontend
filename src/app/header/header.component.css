@@ -8,7 +8,7 @@
   color: aliceblue;
 }
 
-.login, .register, .new-post {
+.login, .register, .new-post, .logout {
   padding-top: 10px;
   color: aliceblue;
   text-decoration: none;
@@ -18,7 +18,7 @@
 }
 
 .login:hover, .register:hover, .login:active, .register:active, .new-post:hover,
-.new-post:active {
+.new-post:active, .logout:hover, .logout:active {
   color: aliceblue;
   background-color: transparent;
   border-color: transparent;

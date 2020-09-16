@@ -7,11 +7,14 @@
 <!--        </div>-->
       </div>
       <div class="col-md-3">
-          <a href="/add-post" class="new-post btn btn-default"
-             *ngIf="isAuthenticated()"> Add
+          <a href="/add-post" class="new-post btn btn-default" *ngIf="isAuthenticated()"> Add
             Post</a>
-        <a href="/login" class="btn btn-default login">Login</a>
-        <a href="/register" class="btn btn-default register">Register</a>
+        <button class="btn logout btn-default" (click)="logout()" *ngIf="isAuthenticated()">Logout
+        </button>
+        <a href="/login" class="btn btn-default login"
+           *ngIf="!isAuthenticated()">Login</a>
+        <a href="/register" class="btn btn-default register"
+           *ngIf="!isAuthenticated()">Register</a>
       </div>
     </div>
   </div>
